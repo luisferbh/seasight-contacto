@@ -2,10 +2,11 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>¡Contáctanos!</title>
   <style>
     body {
-      background-color: #307c8c; /* Azul verdoso claro */
+      background-color: #307c8c; /* Azul verdoso */
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
@@ -14,6 +15,16 @@
     .centrado {
       text-align: center;
       margin-top: 30px;
+    }
+
+    .logo {
+      width: 15%;
+      max-width: 200px;
+    }
+
+    video {
+      width: 30%;
+      max-width: 400px;
     }
 
     .iconos {
@@ -41,8 +52,26 @@
 
     h2 {
       text-align: center;
-      color: #00695c;
+      color: #ffffff;
       margin-top: 40px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    /* RESPONSIVE: para pantallas pequeñas */
+    @media (max-width: 600px) {
+      .logo {
+        width: 40%;
+      }
+
+      video {
+        width: 90%;
+      }
+
+      .iconos img {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+      }
     }
   </style>
 </head>
@@ -51,12 +80,12 @@
 
   <!-- Logo centrado -->
   <div class="centrado">
-    <img src="logo_seasight.png" height="10%" width="15%" alt="Logo Seasight">
+    <img src="logo_seasight.png" class="logo" alt="Logo Seasight">
   </div>
 
   <!-- Video centrado -->
   <div class="centrado">
-    <video width="20%" controls>
+    <video controls>
       <source src="video_pro.mp4" type="video/mp4">
       Tu navegador no soporta el video.
     </video>
@@ -79,8 +108,8 @@
 
     <!-- Gmail -->
     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=seasightvzla@gmail.com" target="_blank">
-  <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" width="40">
-</a>
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
+    </a>
   </div>
 
 </body>
